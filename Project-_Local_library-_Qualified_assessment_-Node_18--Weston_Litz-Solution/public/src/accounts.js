@@ -18,19 +18,19 @@ return books.reduce((total, book) => {
 }
 
 
-/* function getBooksPossessedByAccount(account, books, authors) {
-const accountID = account.id
-return books
-  .filter (book => {
-  const recentBorrow = book.borrows[0]
-  return recentBorrow.id === accountID && !recentBorrow.returned})
-  .map(book => {
-  const author = authors.find(author=> author.id === book.authorId)
-  return { ...book, author}
-})
-  return borrowers.slice(0, 10)
-}
-/* 
+//function getBooksPossessedByAccount(account, books, authors) {
+//const accountID = account.id
+//return books
+ // .filter (book => {
+//  const recentBorrow = book.borrows[0]
+ // return recentBorrow.id === accountID && !recentBorrow.returned})
+//  .map(book => {
+ // const author = authors.find(author=> author.id === book.authorId)
+//  return { ...book, author}
+//})
+//  return borrowers.slice(0, 10)
+//}
+
 
 //Let's write the above working function into two functions. A main one and one that helps support that main, tested function:
 
